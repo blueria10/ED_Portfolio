@@ -1,0 +1,527 @@
+.page1{
+    max-width: 100%;
+    width: 1000px;
+    background: black;
+    color: white;
+    font-family: 'League Spartan', serif;
+    position: absolute;
+    top: 50%; left:50%;
+    transform: translate(-50%, -50%);
+}
+
+.page1 p{
+    font-size: 42px;
+    inline-size: 850px;
+
+}
+
+/*for page4*/
+.page4{
+        background-color: black;
+font-family: 'League Spartan';
+;
+}
+
+.resume p{
+    padding-top: 400px;
+    inline-size: 500px;
+  font-family: 'League Spartan';
+    font-size: 25px;
+}
+.resume img{
+    top: -230px;
+    left: 30px;
+}
+
+.page4 * {
+  padding: 0;
+  margin: 0;
+  outline: none;
+}
+
+
+.resume {
+    margin-top: 40px;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+  background-color: #fff;
+margin-left: 85px;
+  width: 900px;
+  height: 460px;
+
+  border: 4px solid #1e1e1e;
+  border-radius: 40px;
+  box-shadow: 1px 1px 20px #222;
+  cursor: pointer;
+  transition: all 0.6s cubic-bezier(0.745, 0.11, 0.35, 0.845); /* custom */
+  transition-timing-function: cubic-bezier(
+    0.745,
+    0.11,
+    0.35,
+    0.845
+  ); /* custom */
+}
+
+.resume:hover {
+  background-color: #000;
+  border: 4px solid #3d3d3d;
+}
+.resume img {
+  position: relative;
+  height: auto;
+  width: 300px;
+  object-fit: cover;
+  z-index: 10;
+  border: none;
+    opacity: 0;
+      transition: transform .5s;
+}
+.resume:hover img{
+    opacity: 0.4;
+    transition-delay: 1s;
+    opacity: 0.7;
+    transition-delay: 1s;
+    opacity: 1;
+     transform: scale(2.0);
+}
+
+
+
+/*exit page4*/
+#greet{
+    font-size: 59px;
+}
+
+.page1 .mywork{
+    text-decoration: none;
+    color: orange;
+    font-weight: 700;
+    position: relative;}
+.page1 .aboutme{
+    text-decoration: none;
+    color: yellow;
+    font-weight: 700;
+    position: relative;
+}
+.page1 .data{
+    text-decoration: none;
+    color: hotpink;
+    font-weight: 700;
+    position: relative;
+}
+.page1 .Emmanuella{
+    text-decoration: none;
+    color: limegreen;
+    font-weight: 700;
+    position: relative;
+}
+.page1 a::after{
+    content: '';
+    background-color: white;
+    position: absolute;
+    left: 0;
+    bottom: 3px;
+    width: 100%;
+    height: 0px;
+    z-index: -1;
+    transition: all .3s ease-in-out;
+}
+.page1 a:hover::after{
+    bottom: 0;
+    height: 100%;
+}
+
+.page2{
+  background: black;
+  font-family: 'League Spartan';
+  position: relative;
+    max-width: 100%;
+}
+
+
+#aboutsec{
+    width: 100%;
+    margin: 0;
+}
+
+.page2 h1{
+    color: limegreen;
+    font-size: 70px;
+    letter-spacing: 10px;
+    inline-size: 150px;
+
+}
+.page2 p{
+    color: white;
+    inline-size: 600px;
+    letter-spacing: 3px;
+    line-height: 25px;
+}
+
+/*---Add scrollbar---*/
+.page2{
+    overflow-x: hidden;
+}
+.page1{
+    overflow-x: hidden;
+}
+.page3{
+    overflow-x: hidden;
+}
+.page4{
+    overflow-x: hidden;
+}
+/* ===== Scrollbar CSS ===== */
+  /* Firefox */
+  * {
+    scrollbar-width: auto;
+    scrollbar-color: #000000 #000000;
+  }
+
+  /* Chrome, Edge, and Safari */
+  *::-webkit-scrollbar {
+    width: 16px;
+  }
+
+  *::-webkit-scrollbar-track {
+    background: #000000;
+  }
+
+  *::-webkit-scrollbar-thumb {
+    background-color: #000000;
+    border-radius: 10px;
+    border: 3px solid #ffffff;
+  }
+.section1{
+    margin-bottom: 180px;
+    padding-top: 2px;
+
+    margin-left: -430px;
+
+}
+
+.section1 p{
+    font-size: 17px;
+    inline-size: 700px;
+}
+.section2{
+    margin-left: 50px;
+
+
+}
+  .section2 p{
+      background-color: #8d8d07;
+    position: relative;
+      padding: 5% 7%;
+      border:10px;
+      text-align: center;
+
+  }
+
+  h2{
+      color: yellow;
+      font-size: 90px;
+    width: 100%;
+text-align: center;
+justify-content: center;
+    text-shadow: 1px 1px 2px yellow, 0 0 1em white, 0 0 0.2em white;
+margin-left: 20px;
+  }
+  /*for footer*/
+.footer{
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    height: 3rem;
+}
+* , *:before, *:after{
+     box-sizing:border-box;
+     -moz-box-sizing:border-box;
+     -webkit-box-sizing:border-box;
+     -ms-box-sizing:border-box;
+   }
+/*create a flexbox*/
+.flex-cont{
+    display: flex;
+    flex-wrap: nowrap;
+    padding: 50px;
+}
+
+/*Style links in navbar*/
+.topnav a{
+    color: white;
+    overflow: hidden;
+    text-decoration: none;
+    padding: 16px 16px;
+    border-bottom-style: solid;
+    border-bottom-color: white;
+    border-bottom-width: 7px;
+    font-weight: 600;
+    font-size: 15px;
+    letter-spacing: 5px;
+}
+.topnav a:hover{
+
+}
+
+
+.topnav{
+    position:absolute;
+    right: 100px;
+    text-align: right;
+    display: flex;
+    padding-top: 10px;
+
+}
+img{
+    display: -webkit-box;
+    margin-left: auto;
+    position: absolute;
+    right: 120px;
+    width: 350px;
+    height: auto;
+    border:5px solid limegreen;
+}
+
+.forimg{
+    padding-top: 150px;
+}
+
+.sidebyside{
+    display: flex;
+    justify-content: center;
+
+}
+.biggersec{
+    display: flex;
+    justify-content: left;
+}
+
+.secimg img{
+    border: 0;
+    width: 270px;
+    height: auto;
+}
+
+
+/*Breakpoint 1*/
+@media  screen and (min-width: 540px){
+.container1 {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+    }
+.project img{
+    width: 100%;
+}}
+@media  screen and (max-width: 1200px){
+
+    .section1{
+    margin-bottom: 180px;
+    padding-top: 2px;
+
+    margin-left: 4vw;
+
+}
+    .section1 p {
+        font-size: 80%;
+        inline-size: 60%;
+         letter-spacing: 0.35vw;
+    }
+    .section2 p {
+        font-size: 80%;
+        inline-size: 60%;
+        letter-spacing: 0.5vw;
+    }
+
+    .section1 h1 {
+        font-size: 5vw;
+        letter-spacing: 1vw;
+    }
+    h2 {
+        font-size: 5vw;
+        letter-spacing: 1vw;
+    }
+
+    img{
+        max-width: 320px;
+        height: auto;
+        width: 20vw;
+    }
+     .secimg{
+        transition: .3s;
+        padding-bottom: 300px;
+        flex-direction: column;
+
+    }
+
+.project img{
+    width: 100%;
+}
+
+
+}
+@media screen and (max-width: 1200px) and (min-width: 800px) {
+    .topnav a{
+        font-size:10px;
+    }
+.secimg{
+        margin-left: 60px;
+    margin-right: 50px;
+}
+.secimg img{
+        transition: .3s;
+        padding-bottom: 300px;
+        flex-direction: column;
+         width: 28vw;
+         height: auto;
+    }
+}
+@media  screen and (max-width: 800px){
+
+    .section2{
+    margin-left: 9vw;
+        inline-size: 80%;
+
+}
+    .section1{
+    margin-bottom: 180px;
+    padding-top: 2px;
+    margin-right: 20px;
+    margin-left: 30px;
+
+}
+    img {
+         transition: 0.2s;
+         max-width:300px;
+         height: auto;
+         object-fit: contain;
+         width: 50vw;
+
+    }
+    .section1 p {
+        font-size: 80%;
+        inline-size: 70%;
+    }
+    .section2 p {
+        font-size:80%;
+        inline-size: 70%;
+
+    }
+
+    .section1 h1 {
+        font-size: 10vw;
+        letter-spacing: 1vw;
+    }
+     h2 {
+        font-size: 10vw;
+        letter-spacing: 1vw;
+    }
+    .sidebyside {
+        transition: .3s;
+        flex-direction: column;
+        vertical-align: center;
+    }
+     .biggersec {
+        transition: .3s;
+        flex-direction: column;
+        vertical-align: center;
+    }
+
+    .section1 p{
+        inline-size: 320px;
+    }
+    .section2 p{
+        inline-size: 320px;
+    }
+
+    .forimg{
+        transition: .3s;
+        padding-bottom: 300px;
+        flex-direction: column;
+
+    }
+    .secimg{
+        transition: .3s;
+        padding-bottom: 300px;
+        flex-direction: column;
+    }
+
+}
+@media screen and (max-width: 700px) {
+    .flex-cont {
+        flex-wrap: wrap;
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+
+    .flex-cont #greet {
+        font-size: 9vw;
+    }
+
+    .flex-cont p {
+        font-size: 7vw !important;
+    }
+
+
+
+
+    /* Hide the links  (except for logo/home) */
+    .topnav a:not(:first-child) {
+        display: none;
+    }
+
+}
+
+    /*Page #3*/
+    #workpg {
+        color: orange;
+    }
+
+    .page3 h3 {
+        color: white;
+        font-size: 50px;
+        font-weight: lighter;
+        text-align: center;
+    }
+
+    .page3 {
+        background-color: black;
+        font-family: "League Spartan";
+    }
+
+
+
+    div.project img {
+        width: 100%;
+        height: auto;
+        max-width: 600px;
+        border: none;
+        right: 0px;
+        position: relative;
+
+    }
+
+
+    div.project {
+        flex-basis: 100%;
+        margin: 2%;
+        border: 1px solid #ffffff;
+
+    }
+
+    div.project:hover {
+        border: 3px solid orange;
+    }
+    h3 {
+       padding-top: 130px;
+        margin-bottom: 100px;
+}
+    /*Task for next time: 1.)Add text-blocks over each image for project description
+    2.) Create two projects for page*/
+
+
+
